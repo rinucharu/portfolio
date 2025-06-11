@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+#nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  height: 80px;
+  margin-left: 60px;
+}
+nav li {
+  display: inline;
+  margin: 20px;
+}
+
+nav a {
+  font-weight: 700;
+  text-decoration: none;
+  color: black;
+  font-size: large;
+}
+nav a:hover {
+  cursor: pointer;
+  color: rgb(255, 0, 0);
+  text-decoration: underline;
+}
+
+#home {
+  display: flex;
+  align-items: center;
+  margin-left: 100px;
+  margin-top: 100px;
+}
+
+.content-container {
+  margin-top: 100px;
+}
+
+.ai {
+  font-size: 70px;
+}
+
+.content-container p {
+  font-weight: 500;
+  text-align: justify;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.content-container a {
+  color: white;
+  background-color: black;
+  border-radius: 8px;
+  text-decoration: none;
+  padding: 8px;
+}
+
+.image-container {
+  position: relative;
+}
+
+.image-container:hover .girl{
+  left: -70px;
+  transition: left 1s;
+}
+
+.image-container:hover .shadow{
+  top: -280px;
+  left: 20px;
+  transition:1s;
+}
+
+.image-container img{
+  transition: 1s;
+}
+
+
+.girl {
+  position: absolute;
+  z-index: 1;
+  top: -230px;
+
+}
+
+
+.shadow {
+  position: absolute;
+  height: 500px;
+  top: -230px;
+}
+
+
+#about {
+  margin-top: 200px;
+}
+
+.align {
+  text-align: center;
+}
+
+.align h1 {
+  font-size: 40px;
+  margin-top: 40px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 150px;
+  margin-top: 50px;
+}
+
+.about img {
+  width: 100%;
+  margin-left: 60px;
+}
+
+.about-content p {
+  text-align: justify;
+  font-weight: 550;
+  font-size: 17px;
+  margin-right: 40px;
+}
+
+.about-content h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.bar {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 100px;
+  position: relative;
+}
+
+.basebar {
+  background-color: black;
+  width: 100%;
+  border-radius: 10px;
+  height: 0.7rem;
+  position: absolute;
+  top: 25px;
+}
+
+#htmlbar {
+  background-color: orange;
+  width: 89%;
+  top: 25px;
+}
+
+#cssbar {
+  background-color: orange;
+  width: 79%;
+}
+
+#jsbar {
+  background-color: orange;
+  width: 80%;
+}
+
+#reactbar {
+  background-color: orange;
+  width: 90%;
+}
+
+.icons{
+  margin-top: 25px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  font-size: 30px;
+}
+
+.icons i{
+  color: black;
+}
+
+.anime{
+  padding: 7px;
+  border-radius: 50%;
+}
+.anime:hover{
+   background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+}
+
+.anime:hover i{
+  color: white;
+  animation: rotate 5s;
+}
+
+@keyframes rotate {
+  0%{
+    transform: rotate(30deg);
+  }
+   20%{
+    transform: rotate(-30deg);
+  }
+   40%{
+    transform: rotate(30deg);
+  }
+   60%{
+    transform: rotate(-30deg);
+  }
+   80%{
+    transform: rotate(30deg);
+  }
+   100%{
+    transform: rotate(-30deg);
+  }
+  
+}
+
+
+::-webkit-scrollbar{
+ 
+  width: 10px;
+}
+
+::-webkit-scrollbar-track{
+  background-color: white;
+}
+::-webkit-scrollbar-thumb{
+  background-color: orange;
+  border-radius: 10px;
+  
+}
+
+::-webkit-scrollbar-thumb:hover{
+  box-shadow: 3px 3px 3px orangered;
+}
